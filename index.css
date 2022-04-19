@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    /* background: url(images/bg2.jpeg) no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    width: 37%;
+    display: inline-block;
+    border-bottom: 2px solid;
+    /* text-align: center; */
+    padding-top: 30px;
+}
+.container {
+    display: none;
+    width: 100%;
+    /* height: auto; */
+    /* margin: 0 auto; */
+    /* display: flex; */
+    justify-content: center;
+    padding: 30px 0px;
+}
+.game-box {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3,15vh);
+    font-size: 8vh;
+    /* background: #b7b7a44a; */
+    box-shadow: rgb(0 0 0 / 40%) 0px 30px 90px;
+}
+.box {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    display: flex;
+    border-color: #ABBBD8;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.b-r {
+    border-right: none;
+}
+.b-b {
+    border-bottom: none;
+}
+.info-box {
+    
+    padding: 30px 0px;
+}
+.win-image {
+    display: none;
+}
+.reset-btn {
+    padding-top: 25px;
+    DISPLAY: flex;
+    justify-content: center;
+}
+.reset {
+    display: none;
+}
+button {
+    padding: 15px 70px;
+    border: none;
+    background: bisque;
+    border: 2px solid bisque;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s all ease-in-out;
+}
+button:hover {
+    background: transparent;
+}
+.winner {
+    display: none;
+}
+.gambox {
+    display: flex;
+}
+.d-flex {
+    display: flex;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+.box {
+    /* animation: slideBox 1s infinite normal forwards ease-in-out; */
+}
+@keyframes slideBox {
+    0% {
+        background: red;
+    }
+    100% {
+        background: yellow;
+    }
+}
